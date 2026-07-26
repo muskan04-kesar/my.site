@@ -2,7 +2,7 @@
 
 Personal portfolio website built with vanilla HTML, CSS, and JavaScript. Features a Three.js animated background, scroll-reveal animations, and a fully responsive layout.
 
-**Live:** open `index.html` in any browser — no build step required.
+**Live:** muskankesarwani-ga2oodlg3-muskan04-kesars-projects.vercel.app
 
 ---
 
