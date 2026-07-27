@@ -180,6 +180,41 @@
             width: 100%;
         }
 
+        .nav-resume {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.68rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--accent);
+            text-decoration: none;
+            border: 1px solid rgba(232, 201, 126, 0.45);
+            padding: 8px 18px;
+            position: relative;
+            overflow: hidden;
+            transition: color 0.3s ease;
+            white-space: nowrap;
+        }
+
+        .nav-resume::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background-color: var(--accent);
+            transition: left 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+            z-index: -1;
+        }
+
+        .nav-resume:hover {
+            color: var(--bg);
+        }
+
+        .nav-resume:hover::before {
+            left: 0;
+        }
+
         /* Typography & Globals */
         .section-label {
             font-family: 'JetBrains Mono', monospace;
@@ -993,10 +1028,11 @@
             <h2 class="section-title">About<br>Me</h2>
             <div class="about-text-wrap">
                 <p class="about-text">
-                    I am <strong>Muskan Kesarwani</strong>, Software Engineering fresher and aspiring AI Engineer with hands-on experience in Machine Learning, 
-                    NLP, and LLM integration, alongside full-stack development (React, Node.js) and distributed backend systems (Kafka, Redis). 
-                    Skilled in building RAG pipelines and agentic AI workflows (LangChain, LangGraph, CrewAI) and scalable REST APIs. 
-                    Smart India Hackathon 2025 Finalist with a strong foundation in Data Structures & Algorithms and system design.
+                    I am <strong>Muskan Kesarwani</strong>, I build AI systems that actually ship — not notebooks that stay notebooks. 
+                    As a Software Engineering fresher and aspiring AI Engineer, I've architected event-driven backends handling real-time data at scale (Kafka, Redis, Socket.IO), 
+                    built production RAG pipelines that eliminate hallucination through strict source grounding (LangChain, LangGraph, ChromaDB), 
+                    and shipped agentic workflows end-to-end from design to deployment. Smart India Hackathon 2025 Finalist. Currently deepening my systems design and 
+                    distributed backend skills while building toward remote AI engineering roles.
                 </p>
             </div>
         </div>
